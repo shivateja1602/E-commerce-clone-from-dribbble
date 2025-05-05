@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Analytics Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="dashboard">
+    <header class="dashboard-header">
+      <h1>Analytics Dashboard</h1>
+      <div class="date-selector">
+        <span>October 16 - November 14, 2021</span>
+      </div>
+    </header>
+
+    <div class="dashboard-grid">
+    
+      <div class="dashboard-cell">
+        <div class="dashboard-grid inner-grid">
+         
+          <div class="metric-card">
+            <div class="card-header">
+              <h2 class="card-title">PPC Sales</h2>
+              <button class="more-btn">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="12" cy="12" r="1" fill="#888" />
+                  <circle cx="6" cy="12" r="1" fill="#888" />
+                  <circle cx="18" cy="12" r="1" fill="#888" />
+                </svg>
+              </button>
+            </div>
+            <div class="card-subheader">Oct 16 / 21 - Nov 14 / 21</div>
+            <div class="metric-value">$890.00</div>
+            <div class="metric-previous">$872.00</div>
+            <div class="metric-change positive">
+              <span>+0.17%</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 19V5M5 12l7-7 7 7"/>
+              </svg>
+            </div>
+          </div>
+
+      
+          <div class="metric-card">
+            <div class="card-header">
+              <h2 class="card-title">Orders Created</h2>
+              <button class="more-btn">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="12" cy="12" r="1" fill="#888" />
+                  <circle cx="6" cy="12" r="1" fill="#888" />
+                  <circle cx="18" cy="12" r="1" fill="#888" />
+                </svg>
+              </button>
+            </div>
+            <div class="card-subheader">Oct 16 / 21 - Nov 14 / 21</div>
+            <div class="metric-value">$134,970</div>
+            <div class="metric-previous">$128,451</div>
+            <div class="metric-change positive">
+              <span>+12.98%</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 19V5M5 12l7-7 7 7"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+
+   
+      <div class="dashboard-cell">
+        <div class="chart-card">
+          <div class="card-header">
+            <h2 class="card-title">Costs</h2>
+            <div class="chart-legend">
+              <span>Aug 21 - Sep 21</span>
+              <div class="legend-item">
+                <span class="legend-dot costs"></span>
+                <span>Costs</span>
+              </div>
+              <div class="legend-item">
+                <span class="legend-dot exps"></span>
+                <span>Exps</span>
+              </div>
+              <div class="legend-item">
+                <span class="legend-dot odds"></span>
+                <span>Odds</span>
+              </div>
+            </div>
+            <button class="more-btn">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="12" cy="12" r="1" fill="#888" />
+                <circle cx="6" cy="12" r="1" fill="#888" />
+                <circle cx="18" cy="12" r="1" fill="#888" />
+              </svg>
+            </button>
+          </div>
+          <div class="costs-chart">
+            <div class="chart-container">
+              <div class="chart-y-axis">
+                <span>8</span>
+                <span>6</span>
+                <span>4</span>
+                <span>2</span>
+                <span>0</span>
+              </div>
+              <div class="chart-content">
+                <svg viewBox="0 0 400 200" class="line-chart">
+                
+                  <path d="M0,80 C20,85 40,95 60,75 C80,55 100,50 120,65 C140,80 160,95 180,60 C200,25 220,20 240,40 C260,60 280,50 300,20 C320,-10 340,15 360,40 C380,65 400,80 400,90" fill="none" stroke="#D53F8C" stroke-width="2"></path>
+                  
+                
+                  <path d="M0,120 C20,140 40,145 60,130 C80,115 100,100 120,110 C140,120 160,130 180,140 C200,150 220,120 240,100 C260,80 280,85 300,120 C320,155 340,145 360,130 C380,115 400,110 400,120" fill="none" stroke="#805AD5" stroke-width="2"></path>
+                  
+             
+                  <path d="M0,150 C20,145 40,140 60,135 C80,130 100,120 120,125 C140,130 160,125 180,115 C200,105 220,110 240,120 C260,130 280,150 300,160 C320,170 340,155 360,140 C380,125 400,130 400,120" fill="none" stroke="#ECC94B" stroke-width="2"></path>
+                  
+                 
+                  <circle cx="300" cy="20" r="4" fill="#D53F8C"></circle>
+                  <text x="310" y="15" font-size="8" fill="#333">4.25%</text>
+                </svg>
+                <div class="chart-x-axis">
+                  <span>25 Aug</span>
+                  <span>01 Sep</span>
+                  <span>05 Sep</span>
+                  <span>11 Sep</span>
+                  <span>16 Sep</span>
+                  <span>21 Sep</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+     
+      <div class="dashboard-cell">
+        <div class="dashboard-grid inner-grid">
+       
+          <div class="metric-card dark">
+            <div class="card-header">
+              <h2 class="card-title">Total Sales</h2>
+              <button class="more-btn">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="12" cy="12" r="1" fill="#ccc" />
+                  <circle cx="6" cy="12" r="1" fill="#ccc" />
+                  <circle cx="18" cy="12" r="1" fill="#ccc" />
+                </svg>
+              </button>
+            </div>
+            <div class="card-subheader">Oct 16 / 21 - Nov 14 / 21</div>
+            <div class="metric-value">$2,145,132.80</div>
+            <div class="metric-previous">$2,141,564.20</div>
+            <div class="metric-change negative">
+              <span>-4.98%</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 5v14M5 12l7 7 7-7"/>
+              </svg>
+            </div>
+          </div>
+
+        
+          <div class="metric-card">
+            <div class="card-header">
+              <h2 class="card-title">Units Sales</h2>
+              <button class="more-btn">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="12" cy="12" r="1" fill="#888" />
+                  <circle cx="6" cy="12" r="1" fill="#888" />
+                  <circle cx="18" cy="12" r="1" fill="#888" />
+                </svg>
+              </button>
+            </div>
+            <div class="card-subheader">Oct 16 / 21 - Nov 14 / 21</div>
+            <div class="metric-value">$151,740</div>
+            <div class="metric-previous">$145,869</div>
+            <div class="metric-change neutral">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+
+   
+      <div class="dashboard-cell">
+        <div class="dashboard-grid inner-grid">
+          <div class="chart-card products">
+            <div class="card-header">
+              <h2 class="card-title">Top 5 products by spend</h2>
+              <button class="more-btn">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="12" cy="12" r="1" fill="#888" />
+                  <circle cx="6" cy="12" r="1" fill="#888" />
+                  <circle cx="18" cy="12" r="1" fill="#888" />
+                </svg>
+              </button>
+            </div>
+            <div class="donut-chart-container">
+              <div class="donut-chart">
+                <svg width="200" height="200" viewBox="0 0 200 200">
+                  <circle cx="100" cy="100" r="80" fill="white"/>
+                  
+                  <path d="M100,20 A80,80 0 0,1 171,129 L100,100 Z" fill="#805AD5"/>
+                  <path d="M171,129 A80,80 0 0,1 100,180 L100,100 Z" fill="#F687B3"/>
+                  <path d="M100,180 A80,80 0 0,1 29,129 L100,100 Z" fill="#D6BCFA"/>
+                  <path d="M29,129 A80,80 0 0,1 29,71 L100,100 Z" fill="#90CDF4"/>
+                  <path d="M29,71 A80,80 0 0,1 100,20 L100,100 Z" fill="#FEFCBF"/>
+                  
+
+                  <circle cx="100" cy="100" r="50" fill="white"/>
+                  
+
+                  <text x="100" y="90" text-anchor="middle" font-size="12" fill="#718096">Total score</text>
+                  <text x="100" y="115" text-anchor="middle" font-size="24" font-weight="bold" fill="#1A202C">2,985</text>
+                </svg>
+              </div>
+              <div class="donut-info">
+                <div class="product-highlight">
+                  <div class="highlight-amount">$1,815.67</div>
+                  <div class="highlight-id">BO7MCGRV7M</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="chart-card campaigns">
+            <div class="card-header">
+              <h2 class="card-title">Highest ACoS campaigns</h2>
+              <button class="more-btn">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="12" cy="12" r="1" fill="#888" />
+                  <circle cx="6" cy="12" r="1" fill="#888" />
+                  <circle cx="18" cy="12" r="1" fill="#888" />
+                </svg>
+              </button>
+            </div>
+            <table class="campaigns-table">
+              <thead>
+                <tr>
+                  <th>Campaign</th>
+                  <th>Spend</th>
+                  <th>Sales</th>
+                  <th>ACoS</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <div class="campaign-cell">
+                      <div class="avatar">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Campaign Owner">
+                      </div>
+                      <span>Campaign - 3...</span>
+                    </div>
+                  </td>
+                  <td>$40.00</td>
+                  <td>$134.00</td>
+                  <td class="acos">$134.50</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="campaign-cell">
+                      <div class="avatar letter">
+                        <span>A</span>
+                      </div>
+                      <span>BO8NY9N3MT</span>
+                    </div>
+                  </td>
+                  <td>$30.25</td>
+                  <td>$149.85</td>
+                  <td class="acos">$149.85</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="campaign-cell">
+                      <div class="avatar">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Research">
+                      </div>
+                      <span>Research - Ac...</span>
+                    </div>
+                  </td>
+                  <td>$43.55</td>
+                  <td>$129.75</td>
+                  <td class="acos">$125.00</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="campaign-cell">
+                      <div class="avatar">
+                        <img src="https://randomuser.me/api/portraits/men/67.jpg" alt="Campaign">
+                      </div>
+                      <span>BO87C75QQJ</span>
+                    </div>
+                  </td>
+                  <td>$45.85</td>
+                  <td>$113.00</td>
+                  <td class="acos">$119.45</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="campaign-cell">
+                      <div class="avatar letter">
+                        <span>A</span>
+                      </div>
+                      <span>House Numbe...</span>
+                    </div>
+                  </td>
+                  <td>$54.00</td>
+                  <td>$99.55</td>
+                  <td class="acos">$85.00</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
